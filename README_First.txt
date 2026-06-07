@@ -113,6 +113,7 @@ FEATURED PROJECTS
 2. BMI Calculator       — HTML, CSS, JavaScript
 3. Currency Converter   — React.js, API
 4. Password Generator   — React.js
+5. EMPTHR               - HTML, CSS, JavaScript,PHP,MYSQL
 
 
 CONTACT
