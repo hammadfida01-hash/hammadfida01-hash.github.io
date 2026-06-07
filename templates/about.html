@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% load static %}
+
+<section class="about">
+
+  <!-- TOP HERO -->
+  <div class="about-hero">
+    <div class="about-left">
+      <div class="badge"><span class="badge-dot"></span> Open to Work · Fresher</div>
+      <h2>About <em>Me</em></h2>
+      <p class="about-bio">
+        Hi! I'm <strong>Hammad</strong>, a self-taught Fullstack Developer passionate about building
+        real-world web applications. I enjoy turning ideas into clean, functional products —
+        from pixel-perfect frontends to robust Django backends.
+      </p>
+      <p class="about-bio">
+        My goal is to continuously grow as a developer, contribute to meaningful projects,
+        and land my first professional role where I can make a real impact.
+      </p>
+      <div class="about-info">
+        <div class="info-item">📍 <span>Pakistan</span></div>
+        <div class="info-item">🎓 <span>Self-taught Developer</span></div>
+        <div class="info-item">💼 <span>Open to Work</span></div>
+        <div class="info-item">📧 <span>hammadfida01@gmail.com</span></div>
+      </div>
+    </div>
+    <div class="about-right">
+      <div class="profile-wrap">
+        <img src="{% static 'images/myimg2.jpg' %}" alt="Hammad" class="profile-pic">
+      </div>
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="about-skills">
+    <h3>My Tech Stack</h3>
+    <div class="skills-grid">
+
+      <div class="skill-category">
+        <h4>Frontend</h4>
+        <div class="skill-pills">
+          <span class="skill-pill">⚛ React.js</span>
+          <span class="skill-pill">⚡ Vite</span>
+          <span class="skill-pill">🌐 HTML5</span>
+          <span class="skill-pill">🎨 CSS3</span>
+          <span class="skill-pill">💨 Tailwind CSS</span>
+          <span class="skill-pill">🟨 JavaScript</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h4>Backend</h4>
+        <div class="skill-pills">
+          <span class="skill-pill">🐍 Django</span>
+          <span class="skill-pill">🔗 REST API</span>
+          <span class="skill-pill">🗄 MySQL</span>
+          <span class="skill-pill">🐍 Python</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h4>Tools</h4>
+        <div class="skill-pills">
+          <span class="skill-pill">🌿 Git</span>
+          <span class="skill-pill">🐙 GitHub</span>
+          <span class="skill-pill">💻 VS Code</span>
+          <span class="skill-pill">🖥 XAMPP</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <span class="tl-year">2026</span>
+          <h4>Open to Work</h4>
+          <p>Actively looking for my first professional role as a Fullstack Developer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+{% endblock %}

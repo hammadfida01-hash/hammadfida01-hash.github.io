@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<div class="bg-blob bb1"></div>
+<div class="bg-blob bb2"></div>
+<div class="bg-blob bb3"></div>
+
+<div class="hero">
+  <!-- LEFT -->
+  <div class="left">
+    <div class="badge"><span class="badge-dot"></span> Open to Work · Fresher</div>
+
+    <h1>Hi, I'm <em>Hammad</em><br/>A Fullstack<br/>Developer</h1>
+
+    <p class="sub">
+      Self-taught &amp; ready to build. I craft real-world web apps
+      from frontend to backend — React, Django, REST APIs &amp; more.
+    </p>
+
+    <div class="skills">
+      <span class="pill p-react">⚛ React.js</span>
+      <span class="pill p-vite">⚡ Vite</span>
+      <span class="pill p-django">🐍 Django</span>
+      <span class="pill p-mysql">🗄 MySQL</span>
+      <span class="pill p-api">🔗 REST API</span>
+      <span class="pill p-git">🌿 Git</span>
+    </div>
+
+    <div class="btns">
+      <a href="{% static 'cv/hammad_cv.pdf' %}" download class="btn-fill">Download CV ↓</a>
+      <a href="#projects" class="btn-out">View Projects</a>
+    </div>
+  </div>
+
+  <!-- RIGHT -->
+  <div class="right">
+    <!-- Floating badges -->
+    <div class="float-badge fb1">
+      <div class="ficon fi-react">⚛</div>
+      React + Vite
+    </div>
+    <div class="float-badge fb2">
+      <div class="ficon fi-django">🐍</div>
+      Django REST
+    </div>
+    <div class="float-badge fb3">
+      <div class="ficon fi-api">🔗</div>
+      REST API
+    </div>
+
+    <div class="illus-wrap">
+      <!-- Code editor -->
+      <div class="editor">
+        <div class="editor-bar">
+          <div class="dot2 dr"></div>
+          <div class="dot2 dy"></div>
+          <div class="dot2 dg"></div>
+          <div class="editor-title">views.py — Django API</div>
+        </div>
+        <div class="editor-body">
+          <div class="ln"><span class="lnum">1</span><span class="cm"># Fullstack Developer</span></div>
+          <div class="ln"><span class="lnum">2</span><span class="kw">from</span><span class="op"> rest_framework </span><span class="kw">import</span><span class="op"> views</span></div>
+          <div class="ln"><span class="lnum">3</span><span class="kw">from</span><span class="op"> .models </span><span class="kw">import</span><span class="op"> Project</span></div>
+          <div class="ln"><span class="lnum">4</span></div>
+          <div class="ln"><span class="lnum">5</span><span class="kw">class</span><span class="op"> </span><span class="fn">ProjectView</span><span class="op">(views.APIView):</span></div>
+          <div class="ln"><span class="lnum">6</span><span class="op">&nbsp;&nbsp;</span><span class="kw">def</span><span class="op"> </span><span class="fn">get</span><span class="op">(self, request):</span></div>
+          <div class="ln"><span class="lnum">7</span><span class="op">&nbsp;&nbsp;&nbsp;&nbsp;projects = Project.objects.all()</span></div>
+          <div class="ln"><span class="lnum">8</span><span class="op">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="kw">return</span><span class="op"> Response({</span></div>
+          <div class="ln"><span class="lnum">9</span><span class="op">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="str">"status"</span><span class="op">: </span><span class="str">"hired ✓"</span></div>
+          <div class="ln"><span class="lnum">10</span><span class="op">&nbsp;&nbsp;&nbsp;&nbsp;})</span></div>
+        </div>
+      </div>
+
+      <!-- Tech stack row -->
+      <div class="stack-row">
+        <div>
+          <div class="stack-label">My Stack</div>
+        </div>
+        <div class="stack-icons">
+          <div class="sicon" title="React">⚛</div>
+          <div class="sicon" title="Vite">⚡</div>
+          <div class="sicon" title="Django">🐍</div>
+          <div class="sicon" title="MySQL">🗄</div>
+          <div class="sicon" title="REST API">🔗</div>
+          <div class="sicon" title="Git">🌿</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="project-grid">
+
+        <a href="https://github.com/hammadfida01-hash/webdevelopement/tree/main/javascript/Projects" target="_blank" class="project-card">
+            <img src="{% static 'images/tic_tac_toe.jpg' %}" alt="Tic Tac Toe">
+            <h3>Tic Tac Toe</h3>
+            <p>A fun two-player game built with HTML, CSS & JavaScript. Features win detection and score tracking.</p>
+            <span class="card-link">View on GitHub →</span>
+        </a>
+
+        <a href="https://github.com/hammadfida01-hash/webdevelopement/tree/main/javascript/Projects/Cal_BMI_project2" target="_blank" class="project-card">
+            <img src="{% static 'images/bmi_calculator.jpg' %}" alt="BMI Calculator">
+            <h3>BMI Calculator</h3>
+            <p>Calculate Body Mass Index instantly. Built with JavaScript with real-time health category feedback.</p>
+            <span class="card-link">View on GitHub →</span>
+        </a>
+
+        <a href="https://github.com/hammadfida01-hash/webdevelopement/tree/main/react/CurrConvProj_3" target="_blank" class="project-card">
+            <img src="{% static 'images/currency_conv.jpg' %}" alt="Currency Converter">
+            <h3>Currency Converter</h3>
+            <p>Real-time currency conversion app built with React.js using live exchange rate API.</p>
+            <span class="card-link">View on GitHub →</span>
+        </a>
+
+        <a href="https://github.com/hammadfida01-hash/webdevelopement/tree/main/react/Mini_Projects" target="_blank" class="project-card">
+            <img src="{% static 'images/password_gen.jpg' %}" alt="Password Generator">
+            <h3>Password Generator</h3>
+            <p>Secure password generator with custom length, numbers & special characters. Built with React.js.</p>
+            <span class="card-link">View on GitHub →</span>
+        </a>
+
+        
+        <a href="https://github.com/hammadfida01-hash/FYP-Hammad" target="_blank" class="project-card">
+            <img src="{% static 'images/empt.jpg' %}" alt="EMPTHR">
+            <h3>Employee Performance Tracking System for HR</h3>
+            <p>Web-based HR system for employee attendance, task management, and performance tracking. 🚀</p>
+            <span class="card-link">View on GitHub →</span>
+        </a>
+
+    </div>
+</section>
+
+{% endblock %}
